@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7091DC08-FEC5-4B0D-ABBA-E45FDC45B5E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MdxQueryEditor</RootNamespace>
+    <AssemblyName>MdxQueryEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MDXParser">
+      <HintPath>..\ReferencedAssemblies\MDXParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\Microsoft.AnalysisServices.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SearchableControls">
+      <HintPath>..\ReferencedAssemblies\SearchableControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QueryEditor\AutoCompleteListItem.cs" />
+    <Compile Include="QueryEditor\AutoCompleteList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QueryEditor\MessageLog.cs" />
+    <Compile Include="QueryEditor\MdxEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QueryEditor\Connection.cs" />
+    <Compile Include="QueryEditor\AdomdClientCubeInfo.cs" />
+    <Compile Include="QueryEditor\Intellisense.cs" />
+    <Compile Include="QueryEditor\IntellisenseOptions.cs" />
+    <Compile Include="QueryEditor\MessagesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryEditor\MessagesControl.Designer.cs">
+      <DependentUpon>MessagesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryEditor\TextBoxSource.cs" />
+    <Compile Include="MdSchema\AdomdSchema.cs" />
+    <Compile Include="MdSchema\eDataType.cs" />
+    <Compile Include="MdSchema\eDimensionType.cs" />
+    <Compile Include="MdSchema\eHierarchyOrigin.cs" />
+    <Compile Include="MdSchema\eHierarchyStructure.cs" />
+    <Compile Include="MdSchema\eInstanceSelection.cs" />
+    <Compile Include="MdSchema\eLevelType.cs" />
+    <Compile Include="MdSchema\eMeasureAggregator.cs" />
+    <Compile Include="MdSchema\ePropertyType.cs" />
+    <Compile Include="MdSchema\eRelationCardinality.cs" />
+    <Compile Include="MdSchema\eServerVersion.cs" />
+    <Compile Include="MdSchema\IMdObject.cs" />
+    <Compile Include="MdSchema\IMdObjectCaptionComparer_T_.cs" />
+    <Compile Include="MdSchema\MdCube.cs" />
+    <Compile Include="MdSchema\MdDimension.cs" />
+    <Compile Include="MdSchema\MdHierarchy.cs" />
+    <Compile Include="MdSchema\MdKpi.cs" />
+    <Compile Include="MdSchema\MdLevel.cs" />
+    <Compile Include="MdSchema\MdMeasure.cs" />
+    <Compile Include="MdSchema\MdMeasureGroup.cs" />
+    <Compile Include="MdSchema\MdMeasureGroupDimension.cs" />
+    <Compile Include="MdSchema\MdMember.cs" />
+    <Compile Include="MdSchema\MdObjectList_T_.cs" />
+    <Compile Include="MdSchema\MdProperty.cs" />
+    <Compile Include="MdSchema\MdSchemaShared.cs" />
+    <Compile Include="MdSchema\MdSet.cs" />
+    <Compile Include="MdSchema\MdTreeBuilder.cs" />
+    <Compile Include="QueryEditor\eHighlightType.cs" />
+    <Compile Include="QueryEditor\FontUtils.cs" />
+    <Compile Include="QueryEditor\MyTextSegmentComparer.cs" />
+    <Compile Include="QueryEditor\NativeMethods.cs" />
+    <Compile Include="QueryEditor\ParserUtil.cs" />
+    <Compile Include="QueryEditor\TextBoxAPIHelper.cs" />
+    <Compile Include="QueryEditor\TextSegment.cs" />
+    <Compile Include="QueryEditor\UndoRedoEntry.cs" />
+    <Compile Include="QueryEditor\WigglyLine.cs" />
+    <Compile Include="QueryEditor\WigglyLines.cs" />
+    <Compile Include="QueryEditor\WigglyLinesPainter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MDXQueryEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDXQueryEditor.Designer.cs">
+      <DependentUpon>MDXQueryEditor.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MDXQueryEditor.resx">
+      <DependentUpon>MDXQueryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryEditor\MessagesControl.resx">
+      <DependentUpon>MessagesControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
