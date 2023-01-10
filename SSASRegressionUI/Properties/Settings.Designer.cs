@@ -12,7 +12,7 @@ namespace SSASRegressionUI.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -33,114 +33,6 @@ namespace SSASRegressionUI.Properties {
             }
             set {
                 this["cboServerCollection"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Point frmEditTests_Location {
-            get {
-                return ((global::System.Drawing.Point)(this["frmEditTests_Location"]));
-            }
-            set {
-                this["frmEditTests_Location"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Size frmEditTests_Size {
-            get {
-                return ((global::System.Drawing.Size)(this["frmEditTests_Size"]));
-            }
-            set {
-                this["frmEditTests_Size"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool frmEditTests_Maximised {
-            get {
-                return ((bool)(this["frmEditTests_Maximised"]));
-            }
-            set {
-                this["frmEditTests_Maximised"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Point frmEditMdx_Location {
-            get {
-                return ((global::System.Drawing.Point)(this["frmEditMdx_Location"]));
-            }
-            set {
-                this["frmEditMdx_Location"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Size frmEditMdx_Size {
-            get {
-                return ((global::System.Drawing.Size)(this["frmEditMdx_Size"]));
-            }
-            set {
-                this["frmEditMdx_Size"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool frmEditMdx_Maximised {
-            get {
-                return ((bool)(this["frmEditMdx_Maximised"]));
-            }
-            set {
-                this["frmEditMdx_Maximised"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Point frmMain_Location {
-            get {
-                return ((global::System.Drawing.Point)(this["frmMain_Location"]));
-            }
-            set {
-                this["frmMain_Location"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Size frmMain_Size {
-            get {
-                return ((global::System.Drawing.Size)(this["frmMain_Size"]));
-            }
-            set {
-                this["frmMain_Size"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool frmMain_Maximised {
-            get {
-                return ((bool)(this["frmMain_Maximised"]));
-            }
-            set {
-                this["frmMain_Maximised"] = value;
             }
         }
     }
